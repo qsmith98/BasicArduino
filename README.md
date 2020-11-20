@@ -55,12 +55,89 @@ I learned that you have to put text inside the brackets of the void setup and al
 ### Description & Code
 
 ```C++
+int counter = 0;
+int maxnum = 6;
 
+void setup() {
+
+  pinMode(13, OUTPUT);      // Set pin 13 to output
+  
+Serial.begin(9600);
+
+}
+
+
+ 
+
+void loop() {
+   
+    if (counter == 4){
+       Serial.println(4);
+    }if (counter == 3){
+       Serial.println(3);
+    }if (counter == 2){
+       Serial.println(2);
+    }if (counter == 1){
+       Serial.println(1);
+    }if (counter == 5){
+      Serial.println(5);
+    }
+    if (counter < maxnum - 1 ){
+ digitalWrite(13, HIGH);   // Turn on the LED
+ 
+  delay(250);              // Wait for two seconds
+
+  digitalWrite(13, LOW);    // Turn off the LED
+  
+  delay(250
+  );              // Wait for two seconds
+counter++;        // adds to the counter
+     }
+}
 
 ```
 
 ### Evidence
+int counter = 0;
+int maxnum = 6;
 
+void setup() {
+
+  pinMode(13, OUTPUT);      // Set pin 13 to output
+  
+Serial.begin(9600);
+
+}
+
+
+ 
+
+void loop() {
+   
+    if (counter == 4){
+       Serial.println(4);
+    }if (counter == 3){
+       Serial.println(3);
+    }if (counter == 2){
+       Serial.println(2);
+    }if (counter == 1){
+       Serial.println(1);
+    }if (counter == 5){
+      Serial.println(5);
+    }
+    if (counter < maxnum - 1 ){
+ digitalWrite(13, HIGH);   // Turn on the LED
+ 
+  delay(250);              // Wait for two seconds
+
+  digitalWrite(13, LOW);    // Turn off the LED
+  
+  delay(250
+  );              // Wait for two seconds
+counter++;        // adds to the counter
+     }
+}
 ### Image or Wiring
 
 ### Reflection
+I learned that the code int++; changes the int that you assing during the setup. I also learned about if statements in code.
